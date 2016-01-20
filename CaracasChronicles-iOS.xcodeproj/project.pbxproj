@@ -14,7 +14,7 @@
 		A9DE9AB21C4FDBAD00C41493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */; };
 		A9DE9ABD1C4FDBAD00C41493 /* CaracasChronicles_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9ABC1C4FDBAD00C41493 /* CaracasChronicles_iOSTests.swift */; };
 		A9DE9AC81C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AC71C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift */; };
-		E48FC452F5BB301B592143BE /* Pods_CaracasChronicles_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9903B29F5DECA2B3A2A33553 /* Pods_CaracasChronicles_iOS.framework */; };
+		C31AB0C7259AA0B06E951572 /* libPods-CaracasChronicles-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE83C4D910CE241BEBAAC39B /* libPods-CaracasChronicles-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		433F11ADFED4A8537E44C25D /* Pods-CaracasChronicles-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaracasChronicles-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaracasChronicles-iOS/Pods-CaracasChronicles-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		9903B29F5DECA2B3A2A33553 /* Pods_CaracasChronicles_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaracasChronicles_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BAD1A0DFF9033AA5158E06 /* Pods-CaracasChronicles-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaracasChronicles-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaracasChronicles-iOS/Pods-CaracasChronicles-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A9DE9AA41C4FDBAD00C41493 /* CaracasChronicles-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaracasChronicles-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +50,8 @@
 		A9DE9AC31C4FDBAD00C41493 /* CaracasChronicles-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CaracasChronicles-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE9AC71C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracasChronicles_iOSUITests.swift; sourceTree = "<group>"; };
 		A9DE9AC91C4FDBAD00C41493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE9AD61C4FE47B00C41493 /* CaracasChronicles-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CaracasChronicles-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE83C4D910CE241BEBAAC39B /* libPods-CaracasChronicles-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaracasChronicles-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E48FC452F5BB301B592143BE /* Pods_CaracasChronicles_iOS.framework in Frameworks */,
+				C31AB0C7259AA0B06E951572 /* libPods-CaracasChronicles-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +83,7 @@
 		76CE036425E59898F9489E30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9903B29F5DECA2B3A2A33553 /* Pods_CaracasChronicles_iOS.framework */,
+				EE83C4D910CE241BEBAAC39B /* libPods-CaracasChronicles-iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +144,7 @@
 		A9DE9AD51C4FDE1900C41493 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9DE9AD61C4FE47B00C41493 /* CaracasChronicles-iOS-Bridging-Header.h */,
 				A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */,
 			);
 			name = "Supporting Files";
@@ -486,6 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "CaracasChronicles-iOS/CaracasChronicles-iOS-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -498,6 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "CaracasChronicles-iOS/CaracasChronicles-iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};

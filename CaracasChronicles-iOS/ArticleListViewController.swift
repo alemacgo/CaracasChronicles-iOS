@@ -38,3 +38,7 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
         return cell
     }
 }
+
+extension ArticleListViewController: MWFeedParserDelegate {
+    
+}
