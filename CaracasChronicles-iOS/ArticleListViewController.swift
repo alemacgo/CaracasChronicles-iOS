@@ -77,7 +77,6 @@ extension ArticleListViewController: MWFeedParserDelegate {
     
     func feedParser(parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
         print(info)
-        title = info.title
     }
     
     func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
