@@ -11,6 +11,7 @@ import UIKit
 class ArticleListViewController: UIViewController {
 
     var items = [MWFeedItem]()
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -35,11 +36,11 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return items.count
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let item = self.items[indexPath.row] as MWFeedItem
+        let item = items[indexPath.row] as MWFeedItem
         cell.textLabel?.text = item.title
     }
     
@@ -61,21 +62,21 @@ extension ArticleListViewController: MWFeedParserDelegate {
     }
     
     func feedParserDidStart(parser: MWFeedParser) {
-        self.items = [MWFeedItem]()
+        items = [MWFeedItem]()
     }
     
     func feedParserDidFinish(parser: MWFeedParser) {
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
     
     func feedParser(parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
         print(info)
-        self.title = info.title
+        title = info.title
     }
     
     func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
         print(item)
-        self.items.append(item)
+        items.append(item)
     }
     
 }
