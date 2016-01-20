@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9DE9AA81C4FDBAD00C41493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */; };
+		A9DE9AAA1C4FDBAD00C41493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AA91C4FDBAD00C41493 /* ViewController.swift */; };
+		A9DE9AAD1C4FDBAD00C41493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9AAB1C4FDBAD00C41493 /* Main.storyboard */; };
+		A9DE9AAF1C4FDBAD00C41493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9AAE1C4FDBAD00C41493 /* Assets.xcassets */; };
+		A9DE9AB21C4FDBAD00C41493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */; };
+		A9DE9ABD1C4FDBAD00C41493 /* CaracasChronicles_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9ABC1C4FDBAD00C41493 /* CaracasChronicles_iOSTests.swift */; };
+		A9DE9AC81C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AC71C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9DE9AB91C4FDBAD00C41493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9DE9A9C1C4FDBAD00C41493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DE9AA31C4FDBAD00C41493;
+			remoteInfo = "CaracasChronicles-iOS";
+		};
+		A9DE9AC41C4FDBAD00C41493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9DE9A9C1C4FDBAD00C41493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DE9AA31C4FDBAD00C41493;
+			remoteInfo = "CaracasChronicles-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9DE9AA41C4FDBAD00C41493 /* CaracasChronicles-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaracasChronicles-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9DE9AA91C4FDBAD00C41493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9DE9AAC1C4FDBAD00C41493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9DE9AAE1C4FDBAD00C41493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9DE9AB11C4FDBAD00C41493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9DE9AB31C4FDBAD00C41493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE9AB81C4FDBAD00C41493 /* CaracasChronicles-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CaracasChronicles-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE9ABC1C4FDBAD00C41493 /* CaracasChronicles_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracasChronicles_iOSTests.swift; sourceTree = "<group>"; };
+		A9DE9ABE1C4FDBAD00C41493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DE9AC31C4FDBAD00C41493 /* CaracasChronicles-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CaracasChronicles-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DE9AC71C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracasChronicles_iOSUITests.swift; sourceTree = "<group>"; };
+		A9DE9AC91C4FDBAD00C41493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9DE9AA11C4FDBAD00C41493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE9AB51C4FDBAD00C41493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE9AC01C4FDBAD00C41493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9DE9A9B1C4FDBAD00C41493 = {
+			isa = PBXGroup;
+			children = (
+				A9DE9AA61C4FDBAD00C41493 /* CaracasChronicles-iOS */,
+				A9DE9ABB1C4FDBAD00C41493 /* CaracasChronicles-iOSTests */,
+				A9DE9AC61C4FDBAD00C41493 /* CaracasChronicles-iOSUITests */,
+				A9DE9AA51C4FDBAD00C41493 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9DE9AA51C4FDBAD00C41493 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9AA41C4FDBAD00C41493 /* CaracasChronicles-iOS.app */,
+				A9DE9AB81C4FDBAD00C41493 /* CaracasChronicles-iOSTests.xctest */,
+				A9DE9AC31C4FDBAD00C41493 /* CaracasChronicles-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9DE9AA61C4FDBAD00C41493 /* CaracasChronicles-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */,
+				A9DE9AA91C4FDBAD00C41493 /* ViewController.swift */,
+				A9DE9AAB1C4FDBAD00C41493 /* Main.storyboard */,
+				A9DE9AAE1C4FDBAD00C41493 /* Assets.xcassets */,
+				A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */,
+				A9DE9AB31C4FDBAD00C41493 /* Info.plist */,
+			);
+			path = "CaracasChronicles-iOS";
+			sourceTree = "<group>";
+		};
+		A9DE9ABB1C4FDBAD00C41493 /* CaracasChronicles-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9ABC1C4FDBAD00C41493 /* CaracasChronicles_iOSTests.swift */,
+				A9DE9ABE1C4FDBAD00C41493 /* Info.plist */,
+			);
+			path = "CaracasChronicles-iOSTests";
+			sourceTree = "<group>";
+		};
+		A9DE9AC61C4FDBAD00C41493 /* CaracasChronicles-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9AC71C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift */,
+				A9DE9AC91C4FDBAD00C41493 /* Info.plist */,
+			);
+			path = "CaracasChronicles-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9DE9AA31C4FDBAD00C41493 /* CaracasChronicles-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE9ACC1C4FDBAD00C41493 /* Build configuration list for PBXNativeTarget "CaracasChronicles-iOS" */;
+			buildPhases = (
+				A9DE9AA01C4FDBAD00C41493 /* Sources */,
+				A9DE9AA11C4FDBAD00C41493 /* Frameworks */,
+				A9DE9AA21C4FDBAD00C41493 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CaracasChronicles-iOS";
+			productName = "CaracasChronicles-iOS";
+			productReference = A9DE9AA41C4FDBAD00C41493 /* CaracasChronicles-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9DE9AB71C4FDBAD00C41493 /* CaracasChronicles-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE9ACF1C4FDBAD00C41493 /* Build configuration list for PBXNativeTarget "CaracasChronicles-iOSTests" */;
+			buildPhases = (
+				A9DE9AB41C4FDBAD00C41493 /* Sources */,
+				A9DE9AB51C4FDBAD00C41493 /* Frameworks */,
+				A9DE9AB61C4FDBAD00C41493 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DE9ABA1C4FDBAD00C41493 /* PBXTargetDependency */,
+			);
+			name = "CaracasChronicles-iOSTests";
+			productName = "CaracasChronicles-iOSTests";
+			productReference = A9DE9AB81C4FDBAD00C41493 /* CaracasChronicles-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9DE9AC21C4FDBAD00C41493 /* CaracasChronicles-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DE9AD21C4FDBAD00C41493 /* Build configuration list for PBXNativeTarget "CaracasChronicles-iOSUITests" */;
+			buildPhases = (
+				A9DE9ABF1C4FDBAD00C41493 /* Sources */,
+				A9DE9AC01C4FDBAD00C41493 /* Frameworks */,
+				A9DE9AC11C4FDBAD00C41493 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DE9AC51C4FDBAD00C41493 /* PBXTargetDependency */,
+			);
+			name = "CaracasChronicles-iOSUITests";
+			productName = "CaracasChronicles-iOSUITests";
+			productReference = A9DE9AC31C4FDBAD00C41493 /* CaracasChronicles-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9DE9A9C1C4FDBAD00C41493 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					A9DE9AA31C4FDBAD00C41493 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A9DE9AB71C4FDBAD00C41493 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A9DE9AA31C4FDBAD00C41493;
+					};
+					A9DE9AC21C4FDBAD00C41493 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = A9DE9AA31C4FDBAD00C41493;
+					};
+				};
+			};
+			buildConfigurationList = A9DE9A9F1C4FDBAD00C41493 /* Build configuration list for PBXProject "CaracasChronicles-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9DE9A9B1C4FDBAD00C41493;
+			productRefGroup = A9DE9AA51C4FDBAD00C41493 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9DE9AA31C4FDBAD00C41493 /* CaracasChronicles-iOS */,
+				A9DE9AB71C4FDBAD00C41493 /* CaracasChronicles-iOSTests */,
+				A9DE9AC21C4FDBAD00C41493 /* CaracasChronicles-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9DE9AA21C4FDBAD00C41493 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE9AB21C4FDBAD00C41493 /* LaunchScreen.storyboard in Resources */,
+				A9DE9AAF1C4FDBAD00C41493 /* Assets.xcassets in Resources */,
+				A9DE9AAD1C4FDBAD00C41493 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE9AB61C4FDBAD00C41493 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE9AC11C4FDBAD00C41493 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9DE9AA01C4FDBAD00C41493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE9AAA1C4FDBAD00C41493 /* ViewController.swift in Sources */,
+				A9DE9AA81C4FDBAD00C41493 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE9AB41C4FDBAD00C41493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE9ABD1C4FDBAD00C41493 /* CaracasChronicles_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DE9ABF1C4FDBAD00C41493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DE9AC81C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9DE9ABA1C4FDBAD00C41493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DE9AA31C4FDBAD00C41493 /* CaracasChronicles-iOS */;
+			targetProxy = A9DE9AB91C4FDBAD00C41493 /* PBXContainerItemProxy */;
+		};
+		A9DE9AC51C4FDBAD00C41493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DE9AA31C4FDBAD00C41493 /* CaracasChronicles-iOS */;
+			targetProxy = A9DE9AC41C4FDBAD00C41493 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9DE9AAB1C4FDBAD00C41493 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DE9AAC1C4FDBAD00C41493 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DE9AB11C4FDBAD00C41493 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9DE9ACA1C4FDBAD00C41493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9DE9ACB1C4FDBAD00C41493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9DE9ACD1C4FDBAD00C41493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CaracasChronicles-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9DE9ACE1C4FDBAD00C41493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CaracasChronicles-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A9DE9AD01C4FDBAD00C41493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CaracasChronicles-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaracasChronicles-iOS.app/CaracasChronicles-iOS";
+			};
+			name = Debug;
+		};
+		A9DE9AD11C4FDBAD00C41493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CaracasChronicles-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaracasChronicles-iOS.app/CaracasChronicles-iOS";
+			};
+			name = Release;
+		};
+		A9DE9AD31C4FDBAD00C41493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CaracasChronicles-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CaracasChronicles-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A9DE9AD41C4FDBAD00C41493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CaracasChronicles-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CaracasChronicles-iOS";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9DE9A9F1C4FDBAD00C41493 /* Build configuration list for PBXProject "CaracasChronicles-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE9ACA1C4FDBAD00C41493 /* Debug */,
+				A9DE9ACB1C4FDBAD00C41493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DE9ACC1C4FDBAD00C41493 /* Build configuration list for PBXNativeTarget "CaracasChronicles-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE9ACD1C4FDBAD00C41493 /* Debug */,
+				A9DE9ACE1C4FDBAD00C41493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9DE9ACF1C4FDBAD00C41493 /* Build configuration list for PBXNativeTarget "CaracasChronicles-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE9AD01C4FDBAD00C41493 /* Debug */,
+				A9DE9AD11C4FDBAD00C41493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9DE9AD21C4FDBAD00C41493 /* Build configuration list for PBXNativeTarget "CaracasChronicles-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DE9AD31C4FDBAD00C41493 /* Debug */,
+				A9DE9AD41C4FDBAD00C41493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9DE9A9C1C4FDBAD00C41493 /* Project object */;
+}
