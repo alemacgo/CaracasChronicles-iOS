@@ -14,12 +14,16 @@ class ArticleListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var refreshControl = UIRefreshControl()
+    let feedParser = MWFeedParser(feedURL: NSURL(string: "http://www.caracaschronicles.com/feed/rss2"))
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.tableFooterView = UIView(frame: CGRectZero)
         refreshControl.addTarget(self, action: Selector("request"), forControlEvents: .ValueChanged)
         tableView.addSubview(refreshControl)
+        
+        feedParser.delegate = self
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -58,9 +62,6 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
 // MARK: RSS Parser
 extension ArticleListViewController: MWFeedParserDelegate {
     func request() {
-        let URL = NSURL(string: "http://www.caracaschronicles.com/feed/rss2")
-        let feedParser = MWFeedParser(feedURL: URL);
-        feedParser.delegate = self
         feedParser.parse()
     }
     
