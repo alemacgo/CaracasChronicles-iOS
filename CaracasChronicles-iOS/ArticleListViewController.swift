@@ -62,10 +62,12 @@ extension ArticleListViewController: MWFeedParserDelegate {
     }
     
     func feedParserDidStart(parser: MWFeedParser) {
+        SVProgressHUD.show()
         items = [MWFeedItem]()
     }
     
     func feedParserDidFinish(parser: MWFeedParser) {
+        SVProgressHUD.dismiss()
         tableView.reloadData()
     }
     

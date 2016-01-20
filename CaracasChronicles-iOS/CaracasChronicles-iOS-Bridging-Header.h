@@ -10,5 +10,6 @@
 #define CaracasChronicles_iOS_Bridging_Header_h
 
 #import "MWFeedParser.h"
+#import "SVProgressHUD.h"
 
 #endif /* CaracasChronicles_iOS_Bridging_Header_h */
