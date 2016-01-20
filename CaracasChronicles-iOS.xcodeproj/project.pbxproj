@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A9DE9AA81C4FDBAD00C41493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */; };
-		A9DE9AAA1C4FDBAD00C41493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AA91C4FDBAD00C41493 /* ViewController.swift */; };
+		A9DE9AAA1C4FDBAD00C41493 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AA91C4FDBAD00C41493 /* ArticleListViewController.swift */; };
 		A9DE9AAD1C4FDBAD00C41493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9AAB1C4FDBAD00C41493 /* Main.storyboard */; };
 		A9DE9AAF1C4FDBAD00C41493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9AAE1C4FDBAD00C41493 /* Assets.xcassets */; };
 		A9DE9AB21C4FDBAD00C41493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		A9DE9AA41C4FDBAD00C41493 /* CaracasChronicles-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaracasChronicles-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9DE9AA91C4FDBAD00C41493 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9DE9AA91C4FDBAD00C41493 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		A9DE9AAC1C4FDBAD00C41493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9DE9AAE1C4FDBAD00C41493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DE9AB11C4FDBAD00C41493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		A9DE9AA61C4FDBAD00C41493 /* CaracasChronicles-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */,
-				A9DE9AA91C4FDBAD00C41493 /* ViewController.swift */,
+				A9DE9AD51C4FDE1900C41493 /* Supporting Files */,
+				A9DE9AA91C4FDBAD00C41493 /* ArticleListViewController.swift */,
 				A9DE9AAB1C4FDBAD00C41493 /* Main.storyboard */,
 				A9DE9AAE1C4FDBAD00C41493 /* Assets.xcassets */,
 				A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */,
@@ -123,6 +123,14 @@
 				A9DE9AC91C4FDBAD00C41493 /* Info.plist */,
 			);
 			path = "CaracasChronicles-iOSUITests";
+			sourceTree = "<group>";
+		};
+		A9DE9AD51C4FDE1900C41493 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DE9AAA1C4FDBAD00C41493 /* ViewController.swift in Sources */,
+				A9DE9AAA1C4FDBAD00C41493 /* ArticleListViewController.swift in Sources */,
 				A9DE9AA81C4FDBAD00C41493 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
