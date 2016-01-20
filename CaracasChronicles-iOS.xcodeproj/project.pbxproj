@@ -117,8 +117,6 @@
 				A9DE9AA91C4FDBAD00C41493 /* ArticleListViewController.swift */,
 				A9DE9AAB1C4FDBAD00C41493 /* Main.storyboard */,
 				A9DE9AAE1C4FDBAD00C41493 /* Assets.xcassets */,
-				A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */,
-				A9DE9AB31C4FDBAD00C41493 /* Info.plist */,
 			);
 			path = "CaracasChronicles-iOS";
 			sourceTree = "<group>";
@@ -144,6 +142,8 @@
 		A9DE9AD51C4FDE1900C41493 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9DE9AB31C4FDBAD00C41493 /* Info.plist */,
+				A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */,
 				A9DE9AD61C4FE47B00C41493 /* CaracasChronicles-iOS-Bridging-Header.h */,
 				A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */,
 			);
