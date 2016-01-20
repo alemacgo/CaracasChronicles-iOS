@@ -62,11 +62,14 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
 // MARK: RSS Parser
 extension ArticleListViewController: MWFeedParserDelegate {
     func request() {
+        // Prevent showing two loading indicators at once
+        if !refreshControl.refreshing {
+            SVProgressHUD.show()
+        }
         feedParser.parse()
     }
     
     func feedParserDidStart(parser: MWFeedParser) {
-        SVProgressHUD.show()
         items = [MWFeedItem]()
     }
     
@@ -81,7 +84,7 @@ extension ArticleListViewController: MWFeedParserDelegate {
     }
     
     func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
-        print(item)
+//        print(item)
         items.append(item)
     }
     
