@@ -13,10 +13,13 @@ class ArticleListViewController: UIViewController {
     var items = [MWFeedItem]()
     
     @IBOutlet weak var tableView: UITableView!
-    
+    var refreshControl = UIRefreshControl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView(frame: CGRectZero)
+        refreshControl.addTarget(self, action: Selector("request"), forControlEvents: .ValueChanged)
+        tableView.addSubview(refreshControl)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -68,6 +71,7 @@ extension ArticleListViewController: MWFeedParserDelegate {
     
     func feedParserDidFinish(parser: MWFeedParser) {
         SVProgressHUD.dismiss()
+        self.refreshControl.endRefreshing()
         tableView.reloadData()
     }
     
