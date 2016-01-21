@@ -54,7 +54,7 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
         cell.textLabel?.text = item.title
         cell.textLabel?.numberOfLines = 0
         
-        let imageURL = NSURL(string: "http://caracaschronicles.com/wp-poricontent/uploads/2015/10/Logo-CC-Banner-300x99.pg")
+        let imageURL = NSURL(string: "http://graphics8.nytimes.com/images/2011/11/23/us/23abortion_span/23abortion_span-thumbStandard.jpg")
         let placeholderImage = UIImage(named: "grayLogo")
         cell.imageView?.contentMode = .ScaleAspectFit
         cell.imageView?.setImageWithURL(imageURL!, placeholderImage: placeholderImage)
