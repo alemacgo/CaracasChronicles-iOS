@@ -24,12 +24,9 @@ class ArticleListViewController: UIViewController {
         tableView.addSubview(refreshControl)
         
         feedParser.delegate = self
-    }
-    
-    override func viewWillAppear(animated: Bool) {
         request()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
