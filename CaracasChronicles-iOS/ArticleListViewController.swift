@@ -14,7 +14,7 @@ class ArticleListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var refreshControl = UIRefreshControl()
-    let feedParser = MWFeedParser(feedURL: NSURL(string: "http://www.caracaschronicles.com/feed/rss2"))
+    let feedParser = MWFeedParser(feedURL: NSURL(string: Address.RSSFeed))
 
     override func viewDidLoad() {
         super.viewDidLoad()

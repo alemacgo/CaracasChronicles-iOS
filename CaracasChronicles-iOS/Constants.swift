@@ -13,3 +13,7 @@ struct Color {
 struct Size {
     static let NavigationBarHeight = 20 as CGFloat
 }
+
+struct Address {
+    static let RSSFeed = "http://www.caracaschronicles.com/feed/rss2"
+}
