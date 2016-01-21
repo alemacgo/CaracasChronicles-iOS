@@ -35,7 +35,7 @@ class TopNavigationController: UINavigationController {
     func makeGradientLayerImage(height: CGFloat) -> UIImage {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, height)
-        gradientLayer.colors = [Color.DarkYellow.CGColor, Color.LightYellow.CGColor]
+        gradientLayer.colors = [Color.DarkYellow.CGColor, Color.DarkYellow.CGColor]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         
