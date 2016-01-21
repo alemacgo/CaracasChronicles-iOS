@@ -53,6 +53,11 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
         let item = items[indexPath.row] as MWFeedItem
         cell.textLabel?.text = item.title
         cell.textLabel?.numberOfLines = 0
+        
+        let imageURL = NSURL(string: "http://caracaschronicles.com/wp-poricontent/uploads/2015/10/Logo-CC-Banner-300x99.pg")
+        let placeholderImage = UIImage(named: "grayLogo")
+        cell.imageView?.contentMode = .ScaleAspectFit
+        cell.imageView?.setImageWithURL(imageURL!, placeholderImage: placeholderImage)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

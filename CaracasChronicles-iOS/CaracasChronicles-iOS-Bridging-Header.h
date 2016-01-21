@@ -11,5 +11,6 @@
 
 #import "MWFeedParser.h"
 #import "SVProgressHUD.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 #endif /* CaracasChronicles_iOS_Bridging_Header_h */
