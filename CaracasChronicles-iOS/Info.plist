@@ -28,6 +28,13 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>caracaschronicles.org</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>caracaschronicles.com</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
