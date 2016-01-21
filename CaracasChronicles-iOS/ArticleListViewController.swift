@@ -41,9 +41,14 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
         return items.count
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
+    }
+    
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let item = items[indexPath.row] as MWFeedItem
         cell.textLabel?.text = item.title
+        cell.textLabel?.numberOfLines = 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
