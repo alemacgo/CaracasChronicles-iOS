@@ -35,9 +35,7 @@ class ArticleListViewController: UIViewController {
 
 // MARK: Table View Controller
 extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int { return 1 }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -80,11 +78,7 @@ extension ArticleListViewController: MWFeedParserDelegate {
         self.refreshControl.endRefreshing()
         tableView.reloadData()
     }
-    
-    func feedParser(parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
-        print(info)
-    }
-    
+
     func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
         items.append(item)
     }
@@ -96,6 +90,7 @@ extension ArticleListViewController {
         if segue.identifier == "showArticle" {
             let item = self.items[tableView.indexPathForSelectedRow!.row] as MWFeedItem
             let destination = segue.destinationViewController as! ArticleViewController
+            destination.title = item.title
             destination.URL = NSURL(string: item.link)
         }
     }
