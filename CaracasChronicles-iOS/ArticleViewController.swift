@@ -22,3 +22,13 @@ class ArticleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+extension ArticleViewController: UIWebViewDelegate {
+    func webViewDidStartLoad(webView: UIWebView) {
+        SVProgressHUD.show()
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView) {
+        SVProgressHUD.dismiss()
+    }
+}
