@@ -47,11 +47,30 @@
                     <navigationItem key="navigationItem" title="Caracas Chronicles" id="EBE-W6-fuI"/>
                     <connections>
                         <outlet property="tableView" destination="HvM-dE-h7W" id="SZL-Cy-zUY"/>
+                        <segue destination="X7y-OG-dyn" kind="show" identifier="showArticle" id="H6c-7a-5UI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="338"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="vzm-r2-aAg">
+            <objects>
+                <viewController id="X7y-OG-dyn" customClass="ArticleViewController" customModule="CaracasChronicles_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IKa-Bo-MMD"/>
+                        <viewControllerLayoutGuide type="bottom" id="5sE-ZU-ei3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JzW-gA-jny">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpn-sJ-y4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="338"/>
         </scene>
         <!--Top Navigation Controller-->
         <scene sceneID="0Lk-N7-oxE">

@@ -57,6 +57,13 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
         configureCell(cell, atIndexPath: indexPath)
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = self.items[indexPath.row] as MWFeedItem
+        let URL = NSURL(string: item.link)
+        print(URL)
+        self.performSegueWithIdentifier("showArticle", sender: self)
+    }
 }
 
 // MARK: RSS Parser
