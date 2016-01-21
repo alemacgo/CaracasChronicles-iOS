@@ -9,7 +9,10 @@
 import UIKit
 
 class ArticleViewController: UIViewController {
+    var URL: NSURL!
+    
     override func viewDidLoad() {
+        self.navigationItem.b
         super.viewDidLoad()
     }
     

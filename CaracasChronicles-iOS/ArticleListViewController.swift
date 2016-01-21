@@ -56,10 +56,8 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let item = self.items[indexPath.row] as MWFeedItem
-        let URL = NSURL(string: item.link)
-        print(URL)
         self.performSegueWithIdentifier("showArticle", sender: self)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
 
@@ -88,8 +86,17 @@ extension ArticleListViewController: MWFeedParserDelegate {
     }
     
     func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
-//        print(item)
         items.append(item)
     }
-    
+}
+
+// MARK: Segues
+extension ArticleListViewController {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showArticle" {
+            let item = self.items[tableView.indexPathForSelectedRow!.row] as MWFeedItem
+            let destination = segue.destinationViewController as! ArticleViewController
+            destination.URL = NSURL(string: item.link)
+        }
+    }
 }
