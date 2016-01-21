@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="340" y="338"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Top Navigation Controller-->
         <scene sceneID="0Lk-N7-oxE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cJK-AD-Ysu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cJK-AD-Ysu" customClass="TopNavigationController" customModule="CaracasChronicles_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cA9-rC-77L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
