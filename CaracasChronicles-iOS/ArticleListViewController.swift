@@ -31,6 +31,10 @@ class ArticleListViewController: UIViewController {
         SVProgressHUD.dismiss()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        SVProgressHUD.dismiss()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
