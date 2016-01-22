@@ -11,7 +11,8 @@ import SwiftyJSON
 
 let NYTimesArticleSearchURL = "svc/search/v2/articlesearch.json"
 
-func fetchFirstNYTimesSquareImage(query: String, completion: (NSURL) -> Void) {
+func fetchFirstNYTimesSquareImage(article: Article, indexPath: NSIndexPath, completion: (NSIndexPath) -> Void) {
+    let query = article.headline
     Alamofire.request(.GET, API.NYTimes.baseURL + NYTimesArticleSearchURL,
         parameters: ["fq": "venezuela " + query,
                      "api-key": API.NYTimes.key,
@@ -22,7 +23,8 @@ func fetchFirstNYTimesSquareImage(query: String, completion: (NSURL) -> Void) {
                 for (_, doc) in docs {
                     for (_, media) in doc["multimedia"] {
                         if media["width"] == media["height"] {
-                            completion(NSURL(string: API.NYTimesImages.baseURL + media["url"].stringValue)!)
+                            article.thumbnailURL = NSURL(string: API.NYTimesImages.baseURL + media["url"].stringValue)!
+                            completion(indexPath)
                             return
                         }
                     }

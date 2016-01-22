@@ -8,7 +8,7 @@
 
 class Article {
     var headline: String
-    var thumbnail: UIImage? = nil
+    var thumbnailURL: NSURL? = nil
     var URL: NSURL
     
     init(headline: String, URL: NSURL) {
