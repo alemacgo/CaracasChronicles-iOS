@@ -10,7 +10,7 @@ import UIKit
 
 class ArticleListViewController: UIViewController {
 
-    var items = [MWFeedItem]()
+    var articles = [Article]()
     
     @IBOutlet weak var tableView: UITableView!
     var refreshControl = UIRefreshControl()
@@ -42,7 +42,7 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int { return 1 }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return articles.count
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -50,15 +50,18 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let item = items[indexPath.row] as MWFeedItem
-        cell.textLabel?.text = item.title
+        let article = articles[indexPath.row]
+        cell.textLabel?.text = article.headline
         cell.textLabel?.numberOfLines = 0
         
-        fetchFirstNYTimesSquareImage(item.title)
-        let imageURL = NSURL(string: "http://graphics8.nytimes.com/images/2011/11/23/us/23abortion_span/23abortion_span-thumbStandard.jpg")
+        fetchFirstNYTimesSquareImage(article.headline, completion: replaceImageWithURL)
+        
         let placeholderImage = UIImage(named: "grayLogo")
         cell.imageView?.contentMode = .ScaleAspectFit
-        cell.imageView?.setImageWithURL(imageURL!, placeholderImage: placeholderImage)
+        cell.imageView?.image = placeholderImage
+    }
+    
+    func replaceImageWithURL(URL: NSURL) {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -85,7 +88,7 @@ extension ArticleListViewController: MWFeedParserDelegate {
     }
     
     func feedParserDidStart(parser: MWFeedParser) {
-        items = [MWFeedItem]()
+        articles = [Article]()
     }
     
     func feedParserDidFinish(parser: MWFeedParser) {
@@ -95,7 +98,7 @@ extension ArticleListViewController: MWFeedParserDelegate {
     }
 
     func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
-        items.append(item)
+        articles.append(Article(headline: item.title!, URL: NSURL(string: item.link!)!))
     }
 }
 
@@ -103,10 +106,10 @@ extension ArticleListViewController: MWFeedParserDelegate {
 extension ArticleListViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showArticle" {
-            let item = self.items[tableView.indexPathForSelectedRow!.row] as MWFeedItem
+            let article = self.articles[tableView.indexPathForSelectedRow!.row]
             let destination = segue.destinationViewController as! ArticleViewController
-            destination.title = item.title
-            destination.URL = NSURL(string: item.link)
+            destination.title = article.headline
+            destination.URL = article.URL
         }
     }
 }

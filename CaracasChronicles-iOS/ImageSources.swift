@@ -11,10 +11,10 @@ import SwiftyJSON
 
 let NYTimesArticleSearchURL = "svc/search/v2/articlesearch.json"
 
-func fetchFirstNYTimesSquareImage(query: String) {
-    Alamofire.request(.GET, API.NYtimes.baseURL + NYTimesArticleSearchURL,
+func fetchFirstNYTimesSquareImage(query: String, completion: (NSURL) -> Void) {
+    Alamofire.request(.GET, API.NYTimes.baseURL + NYTimesArticleSearchURL,
         parameters: ["fq": "venezuela " + query,
-                     "api-key": API.NYtimes.key,
+                     "api-key": API.NYTimes.key,
                      "fl": "multimedia"])
         .responseJSON { response in
             if let result = response.result.value {
@@ -22,7 +22,7 @@ func fetchFirstNYTimesSquareImage(query: String) {
                 for (_, doc) in docs {
                     for (_, media) in doc["multimedia"] {
                         if media["width"] == media["height"] {
-                            print(media["url"].stringValue)
+                            completion(NSURL(string: API.NYTimesImages.baseURL + media["url"].stringValue)!)
                             return
                         }
                     }
