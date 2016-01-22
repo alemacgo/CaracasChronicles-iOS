@@ -17,7 +17,8 @@
 		A9DE9AD81C51088600C41493 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AD71C51088600C41493 /* Constants.swift */; };
 		A9DE9ADA1C51090900C41493 /* TopNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9AD91C51090900C41493 /* TopNavigationController.swift */; };
 		A9DE9ADC1C510FE300C41493 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9ADB1C510FE300C41493 /* ArticleViewController.swift */; };
-		C31AB0C7259AA0B06E951572 /* libPods-CaracasChronicles-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE83C4D910CE241BEBAAC39B /* libPods-CaracasChronicles-iOS.a */; };
+		A9F8BD0C1C52694C0064EF1F /* ImageSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F8BD0B1C52694C0064EF1F /* ImageSources.swift */; };
+		E3470E70F0BB4121010FF3D8 /* Pods_CaracasChronicles_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5BDB2E2CACE83F96B9CE9B /* Pods_CaracasChronicles_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,8 @@
 		A9DE9AD71C51088600C41493 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9DE9AD91C51090900C41493 /* TopNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNavigationController.swift; sourceTree = "<group>"; };
 		A9DE9ADB1C510FE300C41493 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
-		EE83C4D910CE241BEBAAC39B /* libPods-CaracasChronicles-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CaracasChronicles-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F8BD0B1C52694C0064EF1F /* ImageSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSources.swift; sourceTree = "<group>"; };
+		DD5BDB2E2CACE83F96B9CE9B /* Pods_CaracasChronicles_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaracasChronicles_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31AB0C7259AA0B06E951572 /* libPods-CaracasChronicles-iOS.a in Frameworks */,
+				E3470E70F0BB4121010FF3D8 /* Pods_CaracasChronicles_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +91,7 @@
 		76CE036425E59898F9489E30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE83C4D910CE241BEBAAC39B /* libPods-CaracasChronicles-iOS.a */,
+				DD5BDB2E2CACE83F96B9CE9B /* Pods_CaracasChronicles_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +157,7 @@
 				A9DE9AD61C4FE47B00C41493 /* CaracasChronicles-iOS-Bridging-Header.h */,
 				A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */,
 				A9DE9AD71C51088600C41493 /* Constants.swift */,
+				A9F8BD0B1C52694C0064EF1F /* ImageSources.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			files = (
 				A9DE9AAA1C4FDBAD00C41493 /* ArticleListViewController.swift in Sources */,
 				A9DE9AA81C4FDBAD00C41493 /* AppDelegate.swift in Sources */,
+				A9F8BD0C1C52694C0064EF1F /* ImageSources.swift in Sources */,
 				A9DE9ADC1C510FE300C41493 /* ArticleViewController.swift in Sources */,
 				A9DE9AD81C51088600C41493 /* Constants.swift in Sources */,
 				A9DE9ADA1C51090900C41493 /* TopNavigationController.swift in Sources */,

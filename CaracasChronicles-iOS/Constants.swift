@@ -15,5 +15,9 @@ struct Size {
 }
 
 struct Address {
-    static let RSSFeed = "http://www.caracaschronicles.com/feed/rss2"
+    static let RSSFeed = "http://www.caracaschronicles.com/feed/rss2/"
+}
+
+struct API {
+    static let NYtimes = (baseURL: "http://api.nytimes.com/", key: "2b0e83db59899a2c850482ac4841ba29:1:74095692")
 }

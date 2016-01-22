@@ -54,6 +54,7 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
         cell.textLabel?.text = item.title
         cell.textLabel?.numberOfLines = 0
         
+        fetchFirstNYTimesSquareImage(item.title)
         let imageURL = NSURL(string: "http://graphics8.nytimes.com/images/2011/11/23/us/23abortion_span/23abortion_span-thumbStandard.jpg")
         let placeholderImage = UIImage(named: "grayLogo")
         cell.imageView?.contentMode = .ScaleAspectFit
