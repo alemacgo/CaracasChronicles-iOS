@@ -56,13 +56,14 @@ extension ArticleListViewController: UITableViewDelegate, UITableViewDataSource 
         
         fetchFirstNYTimesSquareImage(article, indexPath: indexPath, completion: fetchImageAtIndexPath)
         
-        let placeholderImage = UIImage(named: "grayLogo")
         cell.imageView?.contentMode = .ScaleAspectFit
-        cell.imageView?.image = placeholderImage
+        cell.imageView?.image = UIImage(named: "grayLogo")
     }
     
     func fetchImageAtIndexPath(indexPath: NSIndexPath) {
-        print(articles[indexPath.row].thumbnailURL)
+        let imageURL = articles[indexPath.row].thumbnailURL
+
+        tableView.cellForRowAtIndexPath(indexPath)?.imageView?.setImageWithURL(imageURL!, placeholderImage: nil)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
