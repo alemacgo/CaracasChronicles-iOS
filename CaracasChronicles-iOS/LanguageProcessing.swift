@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 let options = NSLinguisticTaggerOptions.OmitWhitespace.rawValue | NSLinguisticTaggerOptions.JoinNames.rawValue
 let tagger = NSLinguisticTagger(tagSchemes: NSLinguisticTagger.availableTagSchemesForLanguage("en"), options: Int(options))
 
@@ -21,7 +23,6 @@ func getFirstNoun(string: String) -> String {
         }
     }
     if nouns.isEmpty {
-        print(string)
         return string
     }
     return nouns.joinWithSeparator(" ")

@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 class Article {
     var headline: String
     var thumbnailURL: NSURL? = nil

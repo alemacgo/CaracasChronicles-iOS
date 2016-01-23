@@ -56,7 +56,6 @@
 		A9DE9AC31C4FDBAD00C41493 /* CaracasChronicles-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CaracasChronicles-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE9AC71C4FDBAD00C41493 /* CaracasChronicles_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaracasChronicles_iOSUITests.swift; sourceTree = "<group>"; };
 		A9DE9AC91C4FDBAD00C41493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9DE9AD61C4FE47B00C41493 /* CaracasChronicles-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CaracasChronicles-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		A9DE9AD71C51088600C41493 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A9DE9AD91C51090900C41493 /* TopNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNavigationController.swift; sourceTree = "<group>"; };
 		A9DE9ADB1C510FE300C41493 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +158,6 @@
 			children = (
 				A9DE9AB31C4FDBAD00C41493 /* Info.plist */,
 				A9DE9AB01C4FDBAD00C41493 /* LaunchScreen.storyboard */,
-				A9DE9AD61C4FE47B00C41493 /* CaracasChronicles-iOS-Bridging-Header.h */,
 				A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */,
 				A9DE9AD71C51088600C41493 /* Constants.swift */,
 				A9F8BD0B1C52694C0064EF1F /* ImageSources.swift */,
@@ -520,7 +518,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "CaracasChronicles-iOS/CaracasChronicles-iOS-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -533,7 +530,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.caracaschronicles.CaracasChronicles-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "CaracasChronicles-iOS/CaracasChronicles-iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
