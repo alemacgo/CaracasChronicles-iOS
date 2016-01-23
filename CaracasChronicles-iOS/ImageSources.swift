@@ -12,7 +12,8 @@ import SwiftyJSON
 let NYTimesArticleSearchURL = "svc/search/v2/articlesearch.json"
 
 func fetchFirstNYTimesSquareImage(article: Article, indexPath: NSIndexPath, completion: (NSIndexPath) -> Void) {
-    let query = article.headline
+    let query = getFirstNoun(article.headline)
+    print(query)
     Alamofire.request(.GET, API.NYTimes.baseURL + NYTimesArticleSearchURL,
         parameters: ["fq": "venezuela " + query,
                      "api-key": API.NYTimes.key,

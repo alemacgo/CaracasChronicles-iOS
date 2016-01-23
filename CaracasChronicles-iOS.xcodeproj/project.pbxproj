@@ -19,6 +19,7 @@
 		A9DE9ADC1C510FE300C41493 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE9ADB1C510FE300C41493 /* ArticleViewController.swift */; };
 		A9F8BD0C1C52694C0064EF1F /* ImageSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F8BD0B1C52694C0064EF1F /* ImageSources.swift */; };
 		A9F8BD0E1C5277E00064EF1F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F8BD0D1C5277E00064EF1F /* Article.swift */; };
+		A9F8BD111C531BB80064EF1F /* LanguageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F8BD101C531BB80064EF1F /* LanguageProcessing.swift */; };
 		E3470E70F0BB4121010FF3D8 /* Pods_CaracasChronicles_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5BDB2E2CACE83F96B9CE9B /* Pods_CaracasChronicles_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		A9DE9ADB1C510FE300C41493 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		A9F8BD0B1C52694C0064EF1F /* ImageSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSources.swift; sourceTree = "<group>"; };
 		A9F8BD0D1C5277E00064EF1F /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		A9F8BD101C531BB80064EF1F /* LanguageProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageProcessing.swift; sourceTree = "<group>"; };
 		DD5BDB2E2CACE83F96B9CE9B /* Pods_CaracasChronicles_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaracasChronicles_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 				A9DE9AA71C4FDBAD00C41493 /* AppDelegate.swift */,
 				A9DE9AD71C51088600C41493 /* Constants.swift */,
 				A9F8BD0B1C52694C0064EF1F /* ImageSources.swift */,
+				A9F8BD101C531BB80064EF1F /* LanguageProcessing.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				A9DE9AAA1C4FDBAD00C41493 /* ArticleListViewController.swift in Sources */,
 				A9DE9AA81C4FDBAD00C41493 /* AppDelegate.swift in Sources */,
 				A9F8BD0C1C52694C0064EF1F /* ImageSources.swift in Sources */,
+				A9F8BD111C531BB80064EF1F /* LanguageProcessing.swift in Sources */,
 				A9DE9ADC1C510FE300C41493 /* ArticleViewController.swift in Sources */,
 				A9DE9AD81C51088600C41493 /* Constants.swift in Sources */,
 				A9DE9ADA1C51090900C41493 /* TopNavigationController.swift in Sources */,
